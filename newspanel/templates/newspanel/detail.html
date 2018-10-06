@@ -1,0 +1,15 @@
+<!-- Back to list view -->
+<a href="{% url 'newspanel:index' %}">Back to list view</a>
+
+<!-- Title -->
+<h1>{{ article.title }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<!-- Auther Attributes -->
+<p>{{article.author.author_label}}: {{article.author.author_name}}</p>
+<p>{{article.catagory.catagory_label}}: {{article.catagory.catagory_name}}</p>
+<p>{{article.published_date_label}}: {{article.published_date}}</p>
+
+<!-- Article Content -->
+<p>{{article.content}}</p>

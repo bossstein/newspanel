@@ -1,0 +1,46 @@
+<!-- Main List Screen -->
+
+
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<!--Header-->
+<span>
+<!-- New Article button -->
+<h1>NewsSite</h1><a href="{% url 'newspanel:new_article' %}">Create New Article</a>
+</span>
+<!--Table-->
+{% if latest_article_list %}
+    <table style="width:100%">
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Published Date</th>
+        <th>Catagory</th>
+        <th>Published Status</th>
+    </tr>
+
+    <!-- Cycle through articles -->
+    {% for article in latest_article_list %}
+        <tr>
+            <td><a href="{% url 'newspanel:detail' article.id %}">{{ article.title }}</a></td>
+            <td>{{article.author.author_name}}</td>
+            <td>{{article.published_date}}</td>
+            <td>{{article.catagory.catagory_name}}</td>
+            <td>{{article.pub_status.pub_status_name}}</td>
+            <td><a href="{% url 'newspanel:edit_article' article.id %}">{{ article.edit_label }}</a></td>
+        </tr>
+    {% endfor %}
+
+    </table>
+{% else %}
+    <p>No articles are available.</p>
+{% endif %}
+
+
+</body>

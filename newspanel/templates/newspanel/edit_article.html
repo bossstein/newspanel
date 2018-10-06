@@ -1,0 +1,81 @@
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+textarea {
+    width:100%
+}
+</style>
+</head>
+<body>
+
+<!-- Back to list view -->
+<a href="{% url 'newspanel:index' %}">Back to list view</a>
+
+<!-- Form to edit articles -->
+
+<!-- Call action for form -->
+<form action="{% url 'newspanel:submit_edit' article.id %}" method="post">
+{% csrf_token %}
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<!-- Title field -->
+<p>
+    <label for = "title">{{article.title_label}} : </label>
+    <textarea name = "title" rows = "2" cols = "100" required>{{article.title}}
+    </textarea>
+</p>
+
+<!-- Author field -->
+<p>
+    <label for = "author">{{article.author.author_label}} : </label>
+    <select type = "id" name = "author" value = {{article.author.id}} required>
+        {% for author in author_list %}
+            <option value={{author.id}}>{{author.author_name}}</option>
+        {% endfor %}
+    </select>
+</p>
+
+<!-- Catagory field -->
+<p>
+    <label for = "catagory">{{article.catagory.catagory_label}} : </label>
+    <select type = "id" name = "catagory" value = {{article.catagory.id}} required>
+        {% for catagory in catagory_list %}
+            <option value={{catagory.id}}>{{catagory.catagory_name}}</option>
+        {% endfor %}
+    </select>
+</p>
+
+<!-- Publication Status field -->
+<p>
+    <label for = "pub_status">{{article.pub_status.pub_status_label}} : </label>
+    <select type = "id" name = "pub_status" value = {{article.pub_status.id}} required>
+        {% for pub_status in pub_status_list %}
+            <option value={{pub_status.id}}>{{pub_status.pub_status_name}}</option>
+        {% endfor %}
+    </select>
+</p>
+
+<!-- Published date -->
+<p>
+    <label for = "published_date">{{article.published_date_label}} : </label>
+    <input type = "datetime-local" name = "published_date" value = {{article.published_date_string}} required>
+</p>
+
+<!-- Summary field -->
+<p>
+    <label for = "summary">{{article.summary_label}} : </label>
+    <textarea name = "summary" rows = "2" cols = "100" required>{{article.summary}}
+    </textarea>
+</p>
+
+<!-- Content field -->
+<p>
+    <textarea name = "content" rows = "30" cols = "100" required>{{article.content}}
+    </textarea>
+</p>
+<!-- Submit Button -->
+<input type="submit" value="Submit">
+</form>
+</body>
