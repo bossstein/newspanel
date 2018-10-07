@@ -4,8 +4,7 @@ from .models import Category
 from .models import Pub_status
 from django.core import serializers
 
-# The following three check if the auther, category, and publication status objects exist and creat them is they do not.
-
+# The following three check if the auther, category, and publication status objects exist and create them. This needs to be updated for a production like enviroment. I need a datadump of defaut static objects for pub_status and catagories.
 def create_default_authors():
     # Test Authors
     if len(Author.objects.order_by()) == 0:

@@ -1,4 +1,5 @@
 <head>
+<!-- style parameters for text area and table -->
 <style>
 table, th, td {
     border: 1px solid black;
@@ -31,6 +32,7 @@ textarea {
 <p>
     <label for = "author">{{article.author.author_label}} : </label>
     <select type = "id" name = "author" value = {{article.author.id}} required>
+        <!-- Cycle through author list to display options -->
         {% for author in author_list %}
             <option value={{author.id}}>{{author.author_name}}</option>
         {% endfor %}
@@ -41,6 +43,7 @@ textarea {
 <p>
     <label for = "category">{{article.category.category_label}} : </label>
     <select type = "id" name = "category" value = {{article.category.id}} required>
+        <!-- Cycle through category list to display options -->
         {% for category in category_list %}
             <option value={{category.id}}>{{category.category_name}}</option>
         {% endfor %}
@@ -51,6 +54,7 @@ textarea {
 <p>
     <label for = "pub_status">{{article.pub_status.pub_status_label}} : </label>
     <select type = "id" name = "pub_status" value = {{article.pub_status.id}} required>
+        <!-- Cycle through pub_status list to display options -->
         {% for pub_status in pub_status_list %}
             <option value={{pub_status.id}}>{{pub_status.pub_status_name}}</option>
         {% endfor %}

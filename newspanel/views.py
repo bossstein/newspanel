@@ -16,12 +16,13 @@ from .util import xml_feed
 
 # Create your views here.
 
-# List of articles
+# List of articles viewed as the main screen.
 def index(request):
+    # Tests just in case the app is installed whithout the db.sglite3 db is wiped. Shouldn't be needed.
     create_default_authors()
     create_default_categories()
     create_default_pub_status()
-    # Populating list of articles
+    # Populating list of articles to populate screen.
     latest_article_list = Article.objects.order_by('-published_date')
     context = {'latest_article_list' : latest_article_list}
     return HttpResponse(render(request,'newspanel/index.html',context))
@@ -32,7 +33,7 @@ def detail(request, article_id):
     article = get_object_or_404( Article , pk=article_id )
     return render(request, 'newspanel/detail.html', {'article': article})
 
-# Returns an XML file to populate an APP.
+# Returns an XML file to populate an app.
 def app_req(request):
     return HttpResponse(xml_feed(),content_type='application/xml')
 
@@ -46,6 +47,7 @@ def edit_article(request, article_id):
 
     # Retrieve article
     article = get_object_or_404(Article, pk=article_id)
+
     context = { 'category_list': category_list ,
                 'author_list' : author_list ,
                 'pub_status_list': pub_status_list,

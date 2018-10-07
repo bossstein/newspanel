@@ -6,10 +6,13 @@
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
-<!-- Auther Attributes -->
+<!-- Auther -->
 <p><b>{{article.author.author_label}}</b>: {{article.author.author_name}}</p>
+<!-- Summary -->
 <p><b>{{article.summary_label}}</b>: {{article.summary}}</p>
+<!-- Category -->
 <p><b>{{article.category.category_label}}</b>: {{article.category.category_name}}</p>
+<!-- Date of Publication -->
 <p><b>{{article.published_date_label}}</b>: {{article.published_date}}</p>
 
 <!-- Article Content -->

@@ -18,6 +18,7 @@ table, th, td {
 {% if latest_article_list %}
     <table style="width:100%">
     <tr>
+        <!-- Table Headers -->
         <th>Title</th>
         <th>Author</th>
         <th>Published Date</th>
@@ -28,6 +29,7 @@ table, th, td {
     <!-- Cycle through articles -->
     {% for article in latest_article_list %}
         <tr>
+            <!-- Populate cells -->
             <td><a href="{% url 'newspanel:detail' article.id %}">{{ article.title }}</a></td>
             <td>{{article.author.author_name}}</td>
             <td>{{article.published_date}}</td>
@@ -39,6 +41,7 @@ table, th, td {
 
     </table>
 {% else %}
+    <!-- Message in the case no articles are available -->
     <p>No articles are available.</p>
 {% endif %}
 

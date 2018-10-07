@@ -9,6 +9,7 @@ from .models import Category
 from .models import Pub_status
 
 # Register your models here.
+# Here models are registered so that they can be altered by the admin interface.
 
 admin.site.register(Author)
 admin.site.register(Article)
