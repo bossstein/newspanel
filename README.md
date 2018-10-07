@@ -53,19 +53,19 @@ http://127.0.0.1:8000/newspanel/
 
 You should now expect to see a list view of test articles from where you can read, edit or create articles:
 
-![Main Screen](main_screen.png)
+![Main Screen](DemoImages/main_screen.png)
 
 From here you may read any article by clicking on its title. It will look like this:
 
-![Read Screen](read_screen.png)
+![Read Screen](DemoImages/read_screen.png)
 
 From the original list screen select the edit button on an article to edit attributes for that article:
 
-![Edit Screen](edit_screen.png)
+![Edit Screen](DemoImages/edit_screen.png)
 
 From here you can click "submit" to save these changes. Again from the original list screen select "Create New Article". This brings you back to the same screen as for edit but filled with default values for a new article.
 
-![New Screen](new_screen.png)
+![New Screen](DemoImages/new_screen.png)
 
 Finally. If an application needs to be populated with articles from NewsPanel it can make a http get request to.
 
@@ -73,7 +73,7 @@ Finally. If an application needs to be populated with articles from NewsPanel it
 
 As seen below in a Chrome browser, this request returns an XML message containing a list of all of the articles and their attributes. An application may then be built that displays these articles, possibly filtering by category, publication date or publication status. 
 
-![App Request](app_req.png)
+![App Request](DemoImages/app_req.png)
 
 ### Developer Notes
 
@@ -86,17 +86,15 @@ password: adminadmin
  
 Here new authors, categories and publication statuses can be added.
 
+![Admin Page](DemoImages/admin_page.png)
+
 The main directory should have the following structure:
 
 ```
-*.png : Example screenshots.
-
 db.sqlite3 : SQLite3 database. This is autopopulated by django according to models.py.
-
 SQL_Script_Depracated : Currently unused SQL script for potential port to mysql.
-
 AdminPanel : Contains Django code.
-
+DemoImages : Example Screenshots
 newspanel : Most of NewsPanel code.
 --migration : changes to object model ready to be implemented.
 --templates : html/django style templates for web pages.
