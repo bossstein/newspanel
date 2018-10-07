@@ -6,13 +6,13 @@ Welcome to NewsPanel. NewsPanel is a simple demo web app. Once you have NewsPane
 
 NewsPanel has a few prerequisites:
 
-- **Python 3**: NewsPanel is written in Python. Ensure you have an up to date installation of **Python 3** on your machine:
+- **Python 3**: NewsPanel is written in Python 3. Ensure you have an up to date installation of **Python 3** on your machine:
   - For Linux (recommended) check your package manager. 
   - For Windows [here](https://www.python.org/downloads/windows/).
   - For Mac os [here ](https://www.python.org/downloads/mac-osx/) (mac install in official python docs) or [here](https://docs.python-guide.org/starting/install3/osx/) (using homebrew).
-- **Pip 3** : Pip 3 is used to install Python 3 modules. If you have installed Python 3 then a version of pip3 should be packaged along with it. If you do not then consult [here](https://pip.pypa.io/en/stable/installing/)
+- **Pip 3** : Pip 3 is used to install Python 3 modules. If you have installed Python 3 then a version of pip3 should be packaged along with it. If you have problems then consult [here](https://pip.pypa.io/en/stable/installing/).
 - **Django** : Django is a Python framework for developing web applications. With Pip3 it should be as simple as entering `pip3 install Django` on mac and linux or `py -m pip install Django` on windows. Find further details of how to install Django [here](https://docs.djangoproject.com/en/2.1/topics/install/#installing-official-release).
-- **SQLite3** : SQLite3 is a basic database engine. Luckily it coms packaged in Python by default. In case of any issues however look [here](https://www.sqlite.org/docs.html) (official docs) or [here](https://www.tutorialspoint.com/sqlite/sqlite_installation.htm) (more readable tutorial).
+- **SQLite3** : SQLite3 is a basic database engine. Luckily it comes packaged in Python by default. In case of any issues however look [here](https://www.sqlite.org/docs.html) (official docs) or [here](https://www.tutorialspoint.com/sqlite/sqlite_installation.htm) (more readable tutorial).
 
 ### Installation
 
@@ -45,7 +45,7 @@ Quit the server with CONTROL-C.
 
 ### Using the app
 
-To access the web app open a browser window and enter the following into your address bar:
+To access the web app, open a browser window and enter the following into your address bar:
 
 ```
 http://127.0.0.1:8000/newspanel/
@@ -63,7 +63,7 @@ From the original list screen select the edit button on an article to edit attri
 
 ![Edit Screen](DemoImages/edit_screen.png)
 
-From here you can click "submit" to save these changes. Again from the original list screen select "Create New Article". This brings you back to the same screen as for edit but filled with default values for a new article.
+From here you can click "submit" to save these changes. From the original list screen select "Create New Article". This brings you back to the edit screen but filled with default values for a new article.
 
 ![New Screen](DemoImages/new_screen.png)
 
