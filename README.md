@@ -11,12 +11,12 @@ NewsPanel has a few prerequisites:
   - For Windows [here](https://www.python.org/downloads/windows/).
   - For Mac os [here ](https://www.python.org/downloads/mac-osx/) (mac install in official python docs) or [here](https://docs.python-guide.org/starting/install3/osx/) (using homebrew).
 - **Pip 3** : Pip 3 is used to install Python 3 modules. If you have installed Python 3 then a version of pip3 should be packaged along with it. If you have problems then consult [here](https://pip.pypa.io/en/stable/installing/).
-- **Django** : Django is a Python framework for developing web applications. With Pip3 it should be as simple as entering `pip3 install Django` on mac and linux or `py -m pip install Django` on windows. Find further details of how to install Django [here](https://docs.djangoproject.com/en/2.1/topics/install/#installing-official-release).
-- **SQLite3** : SQLite3 is a basic database engine. Luckily it comes packaged in Python by default. In case of any issues however look [here](https://www.sqlite.org/docs.html) (official docs) or [here](https://www.tutorialspoint.com/sqlite/sqlite_installation.htm) (more readable tutorial).
+- **Django** : Django is a Python framework for developing web applications. With Pip3 it should be as simple as entering `pip3 install Django` on Mac OSX and Linux or `py -m pip install Django` on Windows. Find further details of how to install Django [here](https://docs.djangoproject.com/en/2.1/topics/install/#installing-official-release).
+- **SQLite3** : SQLite3 is a basic database engine. Luckily it comes packaged in Python by default. In case of any issues however, look [here](https://www.sqlite.org/docs.html) (official docs) or [here](https://www.tutorialspoint.com/sqlite/sqlite_installation.htm) (more readable tutorial).
 
 ### Installation
 
-Once all of the above is in place, it is time to get going with NewsPanel. If you are reading this you have likely already downloaded the source code from the [git hub page](https://github.com/bossstein/newspanel) and unzipped the file in you desired location. Below I have given commands in a format suitable for Mac, Linux and Unix systems. After much searching I found that replacing `python3` with just `py` allows you to run python scripts from the command prompt. For more information about running python scripts on Windows see [here](https://docs.python.org/3.3/using/windows.html). 
+Once all of the above is in place, it is time to get going with NewsPanel. If you are reading this you have likely already downloaded the source code from the [git hub page](https://github.com/bossstein/newspanel) and unzipped the file in your desired location. Below I have given commands in a format suitable for Mac, Linux and Unix systems. After much searching I found that replacing `python3` with just `py` allows you to run python scripts from the command prompt. For more information about running python scripts on Windows see [here](https://docs.python.org/3.3/using/windows.html). 
 
 Open a command prompt/terminal in the directory location. Run the following commands to ensure that the object model is properly installed:
 
