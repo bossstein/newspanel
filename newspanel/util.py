@@ -4,7 +4,7 @@ from .models import Category
 from .models import Pub_status
 from django.core import serializers
 
-# The following three check if the auther, catagory, and publication status objects exist and creat them is they do not.
+# The following three check if the auther, category, and publication status objects exist and creat them is they do not.
 
 def create_default_authors():
     # Test Authors

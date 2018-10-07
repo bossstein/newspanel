@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fa6516f-5466-4daa-bdae-21bcb710b841" name="Default Changelist" comment="Defined XML format">
+    <list default="true" id="1fa6516f-5466-4daa-bdae-21bcb710b841" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newspanel/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/newspanel/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newspanel/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/newspanel/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newspanel/templates/newspanel/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/newspanel/templates/newspanel/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newspanel/templates/newspanel/edit_article.html" beforeDir="false" afterPath="$PROJECT_DIR$/newspanel/templates/newspanel/edit_article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newspanel/templates/newspanel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/newspanel/templates/newspanel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newspanel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/newspanel/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newspanel/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/newspanel/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newspanel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/newspanel/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,18 +26,18 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="55" />
-          <entry key="html" value="2450" />
-          <entry key="md" value="4971" />
-          <entry key="py" value="3737" />
+          <entry key="html" value="2475" />
+          <entry key="md" value="5218" />
+          <entry key="py" value="3787" />
           <entry key="txt" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2450" />
-          <entry key="Markdown" value="4971" />
+          <entry key="HTML" value="2475" />
+          <entry key="Markdown" value="5218" />
           <entry key="PLAIN_TEXT" value="24" />
-          <entry key="Python" value="3792" />
+          <entry key="Python" value="3842" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -84,12 +78,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newspanel/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+            <state relative-caret-position="255">
+              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
-                <marker date="1538902982694" expanded="true" signature="1190:1191" ph="..." />
-                <marker date="1538902982694" expanded="true" signature="1190:1195" ph="..." />
+                <marker date="1538913362996" expanded="true" signature="1190:1191" ph="..." />
+                <marker date="1538913362996" expanded="true" signature="1190:1195" ph="..." />
               </folding>
             </state>
           </provider>
@@ -98,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newspanel/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="90">
+              <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -110,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newspanel/templates/newspanel/edit_article.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="435">
               <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
             </state>
           </provider>
@@ -128,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/newspanel/templates/newspanel/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+            <state relative-caret-position="180">
+              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -160,12 +154,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="495">
-                <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+              <first_editor relative-caret-position="135">
+                <caret line="11" column="81" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
               </first_editor>
               <second_editor />
             </state>
@@ -187,8 +181,8 @@
       <find>auther</find>
       <find>published</find>
       <find>cat</find>
-      <find>cata</find>
       <find>cate</find>
+      <find>cata</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,22 +193,22 @@
       <list>
         <option value="$PROJECT_DIR$/newspanel/templates/newspanel/new_article.html" />
         <option value="$PROJECT_DIR$/newspanel/templates/newspanel/util.py" />
-        <option value="$PROJECT_DIR$/newspanel/urls.py" />
-        <option value="$PROJECT_DIR$/newspanel/util.py" />
         <option value="$PROJECT_DIR$/newspanel/templates/newspanel/edit_article.html" />
         <option value="$PROJECT_DIR$/newspanel/admin.py" />
-        <option value="$PROJECT_DIR$/newspanel/templates/newspanel/detail.html" />
         <option value="$PROJECT_DIR$/newspanel/templates/newspanel/index.html" />
         <option value="$PROJECT_DIR$/newspanel/models.py" />
         <option value="$PROJECT_DIR$/newspanel/migrations/0008_auto_20181007_1206.py" />
         <option value="$PROJECT_DIR$/newspanel/views.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/newspanel/util.py" />
+        <option value="$PROJECT_DIR$/newspanel/urls.py" />
+        <option value="$PROJECT_DIR$/newspanel/templates/newspanel/detail.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="y" value="25" />
-    <option name="width" value="1013" />
+    <option name="width" value="1359" />
     <option name="height" value="1055" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -355,20 +349,34 @@
       <option name="project" value="LOCAL" />
       <updated>1538899485761</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Defined XML format">
+      <created>1538905528229</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1538905528229</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Defined XML format">
+      <created>1538913200985</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538913200985</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <frame x="0" y="25" width="1359" height="1055" extended-state="4" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5005417" side_tool="true" weight="0.14719784" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49945828" visible="true" weight="0.13811281" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49945828" visible="true" weight="0.19610779" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32756758" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.32827735" />
       <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32864866" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.399137" />
@@ -454,28 +462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newspanel/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-            <marker date="1538902982694" expanded="true" signature="1190:1191" ph="..." />
-            <marker date="1538902982694" expanded="true" signature="1190:1195" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newspanel/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newspanel/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -508,20 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newspanel/templates/newspanel/edit_article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newspanel/templates/newspanel/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newspanel/templates/newspanel/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -545,10 +517,46 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="495">
-            <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          <first_editor relative-caret-position="135">
+            <caret line="11" column="81" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newspanel/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+            <marker date="1538913362996" expanded="true" signature="1190:1191" ph="..." />
+            <marker date="1538913362996" expanded="true" signature="1190:1195" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newspanel/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newspanel/templates/newspanel/edit_article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newspanel/templates/newspanel/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
         </state>
       </provider>
     </entry>
