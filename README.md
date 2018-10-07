@@ -1,22 +1,22 @@
 # NewsPanel
 
-Welcome to NewsPanel. NewsPanel is a simple demo web app. Once you have NewsPanel up and running you can create view and edit articles. NewsPanel can also receive a request and return an xml file to populate a potential future mobile/standalone application. In the  future, users will be able to log in and use the website to both read, upload, edit and approve content depending on their access rights. This application will only need to be installed in one location on a server and all other users will then access remotely. 
+Welcome to NewsPanel. NewsPanel is a simple demo web app. Once you have NewsPanel up and running you can create view and edit articles. NewsPanel can also receive a request and return an xml file to populate a potential future mobile/standalone application. In the  future, users will be able to log in and use the website to both read, upload, edit and approve content depending on their access rights. This application will only need to be installed in one location on a server and all other users will then access remotely. NewsPanel has been tested on Ubuntu, Mac osx, and Windows 10 and in several browsers.
 
 ### Prerequisites
 
 NewsPanel has a few prerequisites:
 
-- **Python 3**: NewsPanel is written in Python. Ensure you have an up to date installation of **Python 3** on your machine. Follow the instructions as given: 
+- **Python 3**: NewsPanel is written in Python. Ensure you have an up to date installation of **Python 3** on your machine:
   - For Linux (recommended) check your package manager. 
   - For Windows [here](https://www.python.org/downloads/windows/).
   - For Mac os [here ](https://www.python.org/downloads/mac-osx/) (mac install in official python docs) or [here](https://docs.python-guide.org/starting/install3/osx/) (using homebrew).
-- **Pip 3** : Pip 3 is used to install Python 3 modules. If you have installed Python 3 then a version of pip3 should be packaged along with it.
-- **Django** : Django is a Python framework for developing web applications. With Pip3 it should be as simple as entering: ```pip3 install Django```. Find further details of how to install Django [here](https://docs.djangoproject.com/en/2.1/topics/install/#installing-official-release).
+- **Pip 3** : Pip 3 is used to install Python 3 modules. If you have installed Python 3 then a version of pip3 should be packaged along with it. If you do not then consult [here](https://pip.pypa.io/en/stable/installing/)
+- **Django** : Django is a Python framework for developing web applications. With Pip3 it should be as simple as entering `pip3 install Django` on mac and linux or `py -m pip install Django` on windows. Find further details of how to install Django [here](https://docs.djangoproject.com/en/2.1/topics/install/#installing-official-release).
 - **SQLite3** : SQLite3 is a basic database engine. Luckily it coms packaged in Python by default. In case of any issues however look [here](https://www.sqlite.org/docs.html) (official docs) or [here](https://www.tutorialspoint.com/sqlite/sqlite_installation.htm) (more readable tutorial).
 
 ### Installation
 
-Once all of the above is in place, it is time to get going with NewsPanel. If you are reading this you have likely already downloaded the source code from the [git hub page](https://github.com/bossstein/newspanel) and unzipped the file in you desired location. Below I have given commands in a format suitable for Mac, Linux and Unix systems. For Windows see [here](https://docs.python.org/3.3/using/windows.html) for running Python scripts in Windows.
+Once all of the above is in place, it is time to get going with NewsPanel. If you are reading this you have likely already downloaded the source code from the [git hub page](https://github.com/bossstein/newspanel) and unzipped the file in you desired location. Below I have given commands in a format suitable for Mac, Linux and Unix systems. After much searching I found that replacing `python3` with just `py` allows you to run python scripts from the command prompt. For more information about running python scripts on Windows see [here](https://docs.python.org/3.3/using/windows.html). 
 
 Open a command prompt/terminal in the directory location. Run the following commands to ensure that the object model is properly installed:
 
