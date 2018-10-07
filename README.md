@@ -1,22 +1,22 @@
 # NewsPanel
 
-Welcome to NewsPanel. NewsPanel is a simple demo web app. Once you have NewsPanel up and running you can create view and edit articles. NewsPanel can also receive a request and return an xml file to populate a potential future application.
+Welcome to NewsPanel. NewsPanel is a simple demo web app. Once you have NewsPanel up and running you can create view and edit articles. NewsPanel can also receive a request and return an xml file to populate a potential future mobile/standalone application. In the  future, users will be able to log in and use the website to both read, upload, edit and approve content depending on their access rights. This application will only need to be installed in one location on a server and all other users will then access remotely. 
 
 ### Prerequisites
 
-News panel has a few prerequisites:
+NewsPanel has a few prerequisites:
 
-- **Python 3**: NewsPanel is written in python. Ensure you have an up to date installation of python 3 on your machine. Follow the instructions as given 
-  - For Linux (recommended) check your local package manager. 
+- **Python 3**: NewsPanel is written in Python. Ensure you have an up to date installation of **Python 3** on your machine. Follow the instructions as given: 
+  - For Linux (recommended) check your package manager. 
   - For Windows [here](https://www.python.org/downloads/windows/).
   - For Mac os [here ](https://www.python.org/downloads/mac-osx/) (mac install in official python docs) or [here](https://docs.python-guide.org/starting/install3/osx/) (using homebrew).
 - **Pip 3** : Pip 3 is used to install Python 3 modules. If you have installed Python 3 then a version of pip3 should be packaged along with it.
-- **Django** : Django is a Python framework for developing web applications. With pip3 it should be as simple as entering: ```pip3 install Django```. Find further details of how to install django [here](https://docs.djangoproject.com/en/2.1/topics/install/#installing-official-release).
+- **Django** : Django is a Python framework for developing web applications. With Pip3 it should be as simple as entering: ```pip3 install Django```. Find further details of how to install Django [here](https://docs.djangoproject.com/en/2.1/topics/install/#installing-official-release).
 - **SQLite3** : SQLite3 is a basic database engine. Luckily it coms packaged in Python by default. In case of any issues however look [here](https://www.sqlite.org/docs.html) (official docs) or [here](https://www.tutorialspoint.com/sqlite/sqlite_installation.htm) (more readable tutorial).
 
 ### Installation
 
-Once all of the above are in place it is time to get going with NewsPanel. If you are reading this you have likely already downloaded the source code from the [git hub page](https://github.com/bossstein/newspanel) and unzipped the file in you desired location.
+Once all of the above is in place, it is time to get going with NewsPanel. If you are reading this you have likely already downloaded the source code from the [git hub page](https://github.com/bossstein/newspanel) and unzipped the file in you desired location. Below I have given commands in a format suitable for Mac, Linux and Unix systems. For Windows see [here](https://docs.python.org/3.3/using/windows.html) for running Python scripts in Windows.
 
 Open a command prompt/terminal in the directory location. Run the following commands to ensure that the object model is properly installed:
 
@@ -55,11 +55,11 @@ You should now expect to see a list view of test articles from where you can rea
 
 ![Main Screen](main_screen.png)
 
-From here you may read any article by clicking on it's title. This will look like this:
+From here you may read any article by clicking on its title. It will look like this:
 
 ![Read Screen](read_screen.png)
 
-From the original list screen select the edit button on an article to edit that article:
+From the original list screen select the edit button on an article to edit attributes for that article:
 
 ![Edit Screen](edit_screen.png)
 
@@ -71,7 +71,7 @@ Finally. If an application needs to be populated with articles from NewsPanel it
 
 ```http://127.0.0.1:8000/newspanel/app_req/```
 
-As seen below in a chrome browser, this request returns an XML message containing a list of all of the articles and their. An application may then be built that displays these articles, possibly filtering by category, publication date or publication status. 
+As seen below in a Chrome browser, this request returns an XML message containing a list of all of the articles and their attributes. An application may then be built that displays these articles, possibly filtering by category, publication date or publication status. 
 
 ![App Request](app_req.png)
 
@@ -90,9 +90,13 @@ The main directory should have the following structure:
 
 ```
 *.png : Example screenshots.
+
 db.sqlite3 : SQLite3 database. This is autopopulated by django according to models.py.
+
 SQL_Script_Depracated : Currently unused SQL script for potential port to mysql.
+
 AdminPanel : Contains Django code.
+
 newspanel : Most of NewsPanel code.
 --migration : changes to object model ready to be implemented.
 --templates : html/django style templates for web pages.
@@ -110,11 +114,11 @@ newspanel : Most of NewsPanel code.
 
 - Better error handling.
 - Add data validation and verification.
-- Create User log in page.
+- Create user login page.
 - Define user groups (admin, editor, writer, reader with account, casual reader).
 - Differentiate the functionality and access for different users.
 - Extend functionality of publication status to create a journalistic workflow.
 - Parse XML into RSS standard for easier app development.
 - Create web server and host online.
-- Better global labeling in code for future internationalization.
+- Better global labelling in code for future internationalisation.
 - Prettier interface.
