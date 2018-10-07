@@ -37,12 +37,12 @@ textarea {
     </select>
 </p>
 
-<!-- Catagory field -->
+<!-- Category field -->
 <p>
-    <label for = "catagory">{{article.catagory.catagory_label}} : </label>
-    <select type = "id" name = "catagory" value = {{article.catagory.id}} required>
-        {% for catagory in catagory_list %}
-            <option value={{catagory.id}}>{{catagory.catagory_name}}</option>
+    <label for = "category">{{article.category.category_label}} : </label>
+    <select type = "id" name = "category" value = {{article.category.id}} required>
+        {% for category in category_list %}
+            <option value={{category.id}}>{{category.category_name}}</option>
         {% endfor %}
     </select>
 </p>

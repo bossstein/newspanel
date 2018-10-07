@@ -5,11 +5,11 @@ from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from datetime import datetime
 from .util import create_default_authors
-from .util import create_default_catagories
+from .util import create_default_categories
 from .util import create_default_pub_status
 
 from .models import Article
-from .models import Catagory
+from .models import Category
 from .models import Author
 from .models import Pub_status
 from .util import xml_feed
@@ -19,7 +19,7 @@ from .util import xml_feed
 # List of articles
 def index(request):
     create_default_authors()
-    create_default_catagories()
+    create_default_categories()
     create_default_pub_status()
     # Populating list of articles
     latest_article_list = Article.objects.order_by('-published_date')
@@ -40,17 +40,16 @@ def app_req(request):
 def edit_article(request, article_id):
 
     # Populate lists of objects available for selection when editing the article
-    catagory_list = Catagory.objects.order_by('-catagory_name')
+    category_list = Category.objects.order_by('-category_name')
     author_list = Author.objects.order_by('-author_name')
     pub_status_list = Pub_status.objects.order_by('-pub_status_name')
 
     # Retrieve article
     article = get_object_or_404(Article, pk=article_id)
-    context = { 'catagory_list': catagory_list ,
+    context = { 'category_list': category_list ,
                 'author_list' : author_list ,
                 'pub_status_list': pub_status_list,
-                'article' : article,
-                'new_article' : False}
+                'article' : article,}
     return render(request, 'newspanel/edit_article.html', context)
 
 # Action on 'Submit Edit' button on edit_article view.
@@ -62,7 +61,7 @@ def submit_edit(request, article_id):
     # Edit values and save changes.
     article.title           = request.POST['title']
     article.author          = Author(int(request.POST['author']))
-    article.catagory        = Catagory(int(request.POST['catagory']))
+    article.category        = Category(int(request.POST['category']))
     article.pub_status      = Pub_status(int(request.POST['pub_status']))
     article.published_date  = datetime.strptime(request.POST['published_date'],'%Y-%m-%dT%H:%M')
     article.summary         = request.POST['summary']
@@ -76,7 +75,7 @@ def submit_edit(request, article_id):
 def new_article(request):
 
     # Populate lists of objects available for selection when editing the article
-    catagory_list = Catagory.objects.order_by('-catagory_name')
+    category_list = Category.objects.order_by('-category_name')
     author_list = Author.objects.order_by('-author_name')
     pub_status_list = Pub_status.objects.order_by('-pub_status_name')
 
@@ -85,17 +84,16 @@ def new_article(request):
         title = Article.title_label,
         summary = Article.summary_label,
         author = author_list[0],
-        catagory = catagory_list[0],
+        category = category_list[0],
         pub_status = pub_status_list[0],
         published_date = datetime.now(),
         content = Article.content_label
     )
 
-    context = { 'catagory_list': catagory_list ,
+    context = { 'category_list': category_list ,
                 'author_list' : author_list ,
                 'pub_status_list': pub_status_list,
-                'article' : article,
-                'new_article' : False}
+                'article' : article,}
 
 
     return render(request, 'newspanel/edit_article.html', context)

@@ -16,11 +16,11 @@ class Author(models.Model):
 		return self.author_name
 
 # Creating the catagory class
-class Catagory(models.Model):
-	catagory_label = "Catagory"
-	catagory_name = models.CharField(max_length=64)
+class Category(models.Model):
+	category_label = "Catagory"
+	category_name = models.CharField(max_length=64)
 	def __str__(self):
-		return self.catagory_name
+		return self.category_name
 
 # Creating the Publication Status class
 class Pub_status(models.Model):
@@ -43,7 +43,7 @@ class Article(models.Model):
 	# Auther of article
 	author = models.ForeignKey( Author, on_delete=models.CASCADE)
 	# Catagory of article
-	catagory = models.ForeignKey( Catagory , on_delete=models.CASCADE)
+	category = models.ForeignKey( Category , on_delete=models.CASCADE)
 	# Published status of article wherin only pulished should be visible to end user
 	pub_status = models.ForeignKey( Pub_status , on_delete=models.CASCADE)
 

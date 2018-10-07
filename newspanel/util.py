@@ -1,6 +1,6 @@
 from .models import Article
 from .models import Author
-from .models import Catagory
+from .models import Category
 from .models import Pub_status
 from django.core import serializers
 
@@ -15,16 +15,16 @@ def create_default_authors():
         Author.objects.create("Bob")
         Author.objects.create("Eric")
 
-def create_default_catagories():
-    # Test Catagories
-    if len(Catagory.objects.order_by()) == 0:
-        Catagory.objects.create("Sport")
-        Catagory.objects.create("Art, Music & Entertainment")
-        Catagory.objects.create("Poltics")
+def create_default_categories():
+    # Test Categories
+    if len(Category.objects.order_by()) == 0:
+        Category.objects.create("Sport")
+        Category.objects.create("Art, Music & Entertainment")
+        Category.objects.create("Poltics")
 
 def create_default_pub_status():
-    # Test Catagories
-    if len(Catagory.objects.order_by()) == 0:
+    # Test Pub_status
+    if len(Pub_status.objects.order_by()) == 0:
         Pub_status.objects.create("Draft")
         Pub_status.objects.create("Approved")
         Pub_status.objects.create("Published")

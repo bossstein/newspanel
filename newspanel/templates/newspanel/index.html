@@ -21,7 +21,7 @@ table, th, td {
         <th>Title</th>
         <th>Author</th>
         <th>Published Date</th>
-        <th>Catagory</th>
+        <th>Category</th>
         <th>Published Status</th>
     </tr>
 
@@ -31,7 +31,7 @@ table, th, td {
             <td><a href="{% url 'newspanel:detail' article.id %}">{{ article.title }}</a></td>
             <td>{{article.author.author_name}}</td>
             <td>{{article.published_date}}</td>
-            <td>{{article.catagory.catagory_name}}</td>
+            <td>{{article.category.category_name}}</td>
             <td>{{article.pub_status.pub_status_name}}</td>
             <td><a href="{% url 'newspanel:edit_article' article.id %}">{{ article.edit_label }}</a></td>
         </tr>
